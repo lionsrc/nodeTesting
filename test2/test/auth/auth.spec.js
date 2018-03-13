@@ -8,7 +8,7 @@ describe("Test1 Login/Logout", function() {
             var options = {
                 url : base_url + "login",
                 method: 'POST',
-                body: JSON.stringify({"username": "user1", password: "password"}),
+                body: {"username": "user1", password: "password"},
                 json: true,
                 headers: {
                     'content-type': 'application/json'
@@ -43,7 +43,7 @@ describe("Test1 Login/Logout", function() {
             var options = {
                 url : base_url + "login",
                 method: 'POST',
-                body: JSON.stringify({"username": "user1", password: "password1"}),
+                body: {"username": "user1", password: "password1"},
                 json: true,
                 headers: {
                     'content-type': 'application/json'
@@ -63,7 +63,7 @@ describe("Test1 Login/Logout", function() {
             var options = {
                 url : base_url + "login",
                 method: 'POST',
-                body: JSON.stringify({"username": "user1", password: "password"}),
+                body: {"username": "user1", password: "password"},
                 json: true,
                 headers: {
                     'content-type': 'application/json'

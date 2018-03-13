@@ -48,7 +48,7 @@ describe("Configuration testings", function() {
         var options = {
             url : base_url + "api/v1/configuration",
             method: 'POST',
-            body : JSON.stringify(config),
+            body : config,
             json: true
         } 
 
@@ -75,7 +75,7 @@ describe("Configuration testings", function() {
         var options = {
             url : base_url + "login",
             method: 'POST',
-            body: JSON.stringify({"username": "user1", password: "password"}),
+            body: {"username": "user1", password: "password"},
             json: true,
             headers: {
                 'content-type': 'application/json'
@@ -130,7 +130,7 @@ describe("Configuration testings", function() {
                 var options = {
                     url : base_url + "api/v1/configuration/" + newConfig.name,
                     method: 'PUT',
-                    body : JSON.stringify(newConfig),
+                    body : newConfig,
                     json: true
                 } 
         
@@ -160,7 +160,7 @@ describe("Configuration testings", function() {
                 var options = {
                     url : base_url + "api/v1/configuration/"+newConfig.name,
                     method: 'DELETE',
-                    body : JSON.stringify(newConfig),
+                    body : newConfig,
                     json: true
                 } 
                 // delete the configuration
